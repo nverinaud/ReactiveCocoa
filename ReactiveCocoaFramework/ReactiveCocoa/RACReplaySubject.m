@@ -33,7 +33,7 @@ const NSUInteger RACReplaySubjectUnlimitedCapacity = NSUIntegerMax;
 #pragma mark Lifecycle
 
 + (instancetype)replaySubjectWithCapacity:(NSUInteger)capacity {
-	return [[self alloc] initWithCapacity:capacity];
+	return [[RACReplaySubject alloc] initWithCapacity:capacity];
 }
 
 - (instancetype)init {
